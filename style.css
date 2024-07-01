@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.kartu {
+  width: 90%;
+  max-width: 570px;
+  background: linear-gradient(125deg, #665, #32f);
+  color: aliceblue;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 45px;
+  text-align: center;
+}
+
+.pencari {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pencari input {
+  border: 0;
+  outline: 0;
+  background: rgba(239, 148, 29, 0.287);
+  color: #ffffff;
+  padding: 10px 12px;
+  height: 50px;
+  border-radius: 37px;
+  flex: 1;
+  margin-right: 18px;
+  font-size: 20px;
+}
+
+/* .pencari input::placeholder: Mengubah warna teks placeholder menggunakan 
+pseudo-element ::placeholder */
+
+.pencari input::placeholder {
+  font-size: 20px;
+  text-align: start;
+  color: #fffb06; /* Ganti warna ini dengan warna yang diinginkan */
+}
+
+.pencari button {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.suhu-icon {
+  width: 170px;
+  margin-top: 35px;
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.city {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 89px;
+  margin-right: 10px;
+  padding-left: 13px;
+}
+
+.kelembapan,
+.angin {
+  font-size: 28px;
+  margin-top: -7px;
+}
+
+@media (max-width: 480px) {
+  .kartu {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .pencari input {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .temp {
+    font-size: 29px;
+  }
+
+  .city {
+    font-size: 18px;
+  }
+
+  .col p:first-child {
+    font-size: 14px;
+  }
+}
+
+.pesan-error {
+  text-align: left;
+  margin-left: 12px;
+  font-size: 28px;
+  margin-top: 12px;
+}
+
+.feel-like {
+  font-size: 14px;
+}
